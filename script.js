@@ -20,7 +20,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=736412f2
 .then(abc => abc.json())
 .then(abc => document.getElementById('Temperature').innerHTML = parseInt(abc.main.temp-273.15)+"°C")
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=736412f27570e2880986e590ae7278fc`)
+fetch(`api.openweathermap.org/data/2.5/weather?q=${place}&appid=736412f27570e2880986e590ae7278fc`)
 .then(abc => abc.json())
 .then(abc => document.getElementById('speed').innerHTML = abc.wind.speed+"Km/h")
 }
